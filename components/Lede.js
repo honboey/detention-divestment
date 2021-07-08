@@ -1,9 +1,11 @@
 export default function Lede() {
     return (
-        <section>
-            <p>Organisations still doing business with companies profiting form detention: <br />
-            34 universities<br />
-            78 hospitals<br /></p>
+        <section className="max-w-3xl m-2 sm:m-4 md:ml-auto md:mr-auto  border-b">
+            <p>Organisations still doing business with companies profiting form detention:</p>
+            <div className="font-display text-3xl sm:text-5xl flex flex-row pb-8">
+                <div className="flex-grow">34 universities</div>
+                <div className="flex-grow">78 hospitals</div>
+            </div>
         </section>
     )
 }

@@ -1,5 +1,11 @@
 @font-face {
     font-family: "Untitled Sans";
+    src: url(/fonts/untitled-sans-web-light.woff) format("woff");
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Untitled Sans";
     src: url(/fonts/untitled-sans-web-regular.woff) format("woff");
     font-weight: 400;
     font-style: normal;
