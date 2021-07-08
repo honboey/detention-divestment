@@ -1,20 +1,23 @@
 import Head from 'next/head'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 export default function Layout({children}) {
     return (
         <>
             <Head>
                 <link rel="icon" href="/favicon.ico" />
+                <title>Detention Divestment | Refugee Lives Before Corporate Profits</title>
                 <meta
                     name="description"
-                    content="Learn how to build a personal website using Next.js"
+                    content="Find out if your university or hospital is connected to detention centre profits. Our universities and hospitals should NOT have business relationships with companies that profit from the cruel, inhumane and degrading treatment of refugees in detention."
                 />
             </Head>
-            <header>
-                logo and header here
-            </header>
-            <main>{children}</main>
-            <footer>this is the footer</footer>
+
+            <Header />
+            {children}
+            
+            <Footer />
         </>
     )
 }
