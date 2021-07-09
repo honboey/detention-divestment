@@ -9,7 +9,7 @@ export default function Header() {
                 </h1>
 
                 <nav className="border-b pb-4">
-                    <p><Link href="#"><a className="underline text-black">Learn about the campaign</a></Link></p>
+                    <p><Link href="/about"><a className="underline text-black">Learn about the campaign</a></Link></p>
                 </nav>
             </div>
 
