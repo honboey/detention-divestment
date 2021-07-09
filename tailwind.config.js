@@ -6,7 +6,12 @@ module.exports = {
       'body': ['Untitled Sans', 'ui-sans-serif', 'sans-serif'],
       'display': ['Playfair Display', 'serif']
     },
-    extend: {},
+    extend: {
+      width: {
+        '8/25': '32%',
+        '12/25': '48%'
+      }
+    },
   },
   variants: {
     extend: {},
