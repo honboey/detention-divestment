@@ -17,7 +17,7 @@ export default function Layout({children}) {
                 />
             </Head>
             <body className="font-body font-light type-base sm:text-xl text-white bg-red-600">
-                <Header />
+                
                 {children}
             
                 <Footer />

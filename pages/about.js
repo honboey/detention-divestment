@@ -1,4 +1,5 @@
 import Layout from '../components/layout'
+import Header from '../components/Header'
 import About from '../components/About'
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <>
      <Layout>
        <main>
+         <Header />
          <About />
        </main>
      </Layout>
