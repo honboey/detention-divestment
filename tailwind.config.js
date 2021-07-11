@@ -10,7 +10,7 @@ module.exports = {
       width: {
         '8/25': '32%',
         '12/25': '48%'
-      }
+      },
     },
   },
   variants: {
