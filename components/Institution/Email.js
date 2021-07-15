@@ -28,7 +28,7 @@ class Email extends React.Component {
             emailCallToAction = (
                 <MailToLink
                     organisation={this.props.InstitutionName}
-                    vendor={this.props.Provider}
+                    provider={this.props.Provider}
                     text={`Send email to ${this.props.Email}`}
                     email={this.props.Email}
                     classes="inline-block rounded-md bg-white hover:opacity-80 p-4 mx-8 mb-4 text-red-600"
