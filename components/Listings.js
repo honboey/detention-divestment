@@ -6,7 +6,7 @@ export default function Listings({orgs}) {
             <p className="max-w-3xl mr-auto ml-auto mb-2">The following institions all conduct business with detention centre providers:</p>
             <div className="md:flex md:flex-wrap justify-between">
             {orgs.map((organisation) => (
-                <ListingsItem name={organisation.fields.name} provider="n/a" url={`/organisation/${organisation.fields.key}`} key={organisation.id}/>
+                <ListingsItem name={organisation.fields.name} provider={organisation.vendor.fields.name} url={`/organisation/${organisation.fields.key}`} key={organisation.id}/>
             ))}
             </div>
 
