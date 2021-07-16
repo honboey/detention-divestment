@@ -1,4 +1,3 @@
-.example {
-    border: 1px solid pink;
-    @apply bg-blue-100;
+body {
+  @apply bg-red-600;
 }
