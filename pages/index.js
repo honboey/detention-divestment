@@ -3,7 +3,7 @@ import Layout from '../components/layout'
 import Lede from '../components/Lede'
 import Listings from '../components/Listings'
 import Filter from '../components/Filter'
-import { getOrganisations } from "../lib/api";
+import { getOrganisationsWithVendors } from "../lib/api";
 
 export default function Home({ allOrganisations }) {
   return (
@@ -21,16 +21,7 @@ export default function Home({ allOrganisations }) {
 }
 
 export async function getStaticProps() {
-  // const allOrganisations = await getOrganisationsWithVendors();
-  const orgs = await getOrganisations()
-
-  const allOrganisations = orgs.map(record => (
-    {
-      id: record.id,
-      fields: record.fields,
-      vendor: { fields: { name: 'TBD'}}
-    }
-  ))
+  const allOrganisations = await getOrganisationsWithVendors()
 
   return {
     props: {
