@@ -1,8 +1,7 @@
-import Header from '../components/Header'
-import Layout from '../components/layout'
-import Lede from '../components/Lede'
-import Listings from '../components/Listings'
-import Filter from '../components/Filter'
+import Header from "../components/Header";
+import Layout from "../components/layout";
+import Lede from "../components/Lede";
+import Listings from "../components/Listings";
 import { getOrganisationsWithVendors } from "../lib/api";
 
 export default function Home({ allOrganisations }) {
@@ -13,19 +12,18 @@ export default function Home({ allOrganisations }) {
         <main>
           <Lede />
           <Listings orgs={allOrganisations} />
-          <Filter />
         </main>
       </Layout>
     </>
-  )
+  );
 }
 
 export async function getStaticProps() {
-  const allOrganisations = await getOrganisationsWithVendors()
+  const allOrganisations = await getOrganisationsWithVendors();
 
   return {
     props: {
-      allOrganisations
+      allOrganisations,
     },
   };
 }
