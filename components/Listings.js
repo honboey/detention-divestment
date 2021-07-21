@@ -21,7 +21,7 @@ export default function Listings({ orgs }) {
         providers:
       </p>
 
-      <div className="bg-black py-1 px-2">
+      <div className="bg-black py-1 px-2 bottom-0 w-full fixed lg:static">
         <div className="max-w-3xl mr-auto ml-auto my-2 flex">
           <Switch.Group
             as="div"
