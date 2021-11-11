@@ -47,10 +47,8 @@ export default function About() {
           className="underline"
         >
           Donate to the Detention Divestment campaign
-        </a>
-        by giving to RISE – Australia's only welfare and advocacy organisation
-        governed entirely by refugees, asylum seekers and ex-detainees in
-        Australia
+        </a> by giving to RISE – Australia's only welfare and advocacy organisation
+        led and governed entirely by eX-detainees in Australia.
       </p>
     </div>
   );
